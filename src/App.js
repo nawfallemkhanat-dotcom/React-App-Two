@@ -1,24 +1,31 @@
 import "./App.css";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Name from "./Name";
-import Price from "./Price";
-import Description from "./Description";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import product from "./product";
 import Image from "./Image";
+import Price from "./Price";
+import Name from "./Name";
+import Description from "./Description";
 
 function App() {
   return (
-   <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <>
+      {product.map((product) => (
+        <Card style={{ width: "18rem" }} key={product.id}>
+          <Image product={product} />
+
+          <Card.Body>
+            <Name product={product} />
+            <Description product={product} />
+            <Price product={product} />
+
+            <Button className="Button" variant="success">
+              Success
+            </Button>
+          </Card.Body>
+        </Card>
+      ))}
+    </>
   );
 }
 
