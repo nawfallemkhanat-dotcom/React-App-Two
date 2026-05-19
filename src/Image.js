@@ -1,10 +1,10 @@
 import product from "./product";
 
-function Image() {
+function Image(props) {
   return (
     <img
-      src={product.image}
-      alt={product.name}
+      src={props.image}
+      alt={props.name}
       style={{ width: "100%", height: "250px", objectFit: "cover" }}
     />
   );

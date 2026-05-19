@@ -1,8 +1,8 @@
 import product from "./product";
 
-function Name() {
+function Name(props) {
   return (
-    <h3 style={{ marginBottom: "10px" }}>{product.name}</h3>
+    <h3 style={{ marginBottom: "10px", textAlign: "center" }}>{props.name}</h3>
   );
 }
 

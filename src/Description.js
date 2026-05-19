@@ -1,8 +1,8 @@
-import product from "./product";
 
-function Description() {
+
+function Description(props) {
   return (
-    <p style={{ marginBottom: "10px", textAlign: "center" }}>{product.description}</p>
+    <p style={{ marginBottom: "10px", textAlign: "center" }}>{props.description}</p>
   );
 }
 

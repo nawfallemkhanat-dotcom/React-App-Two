@@ -4,10 +4,10 @@ import headsetImage from "./assets/headset.jpg";
 const product = 
 [
   {
-    id: 1,
-    name: "Gaming Laptop MSI",
-    price: "$1500",
-    description:
+  id: 1,
+  name: "Gaming Laptop MSI",
+  price: "$1500",
+  description:
       "A powerful gaming laptop with an Intel Core i7 processor and 16GB RAM.",
   image: productImage,
 },
@@ -17,7 +17,7 @@ const product =
   price: "$300",
   description:
     "A powerful Sound System with noise cancellation.",
-  image: productImage,
+  image: headsetImage,
 }
 ];
 

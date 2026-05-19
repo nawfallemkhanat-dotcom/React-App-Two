@@ -12,12 +12,12 @@ function App() {
     <>
       {product.map((product) => (
         <Card style={{ width: "18rem" }} key={product.id}>
-          <Image product={product} />
+          <Image image={product.image} name={product.name} />
 
           <Card.Body>
-            <Name product={product} />
-            <Description product={product} />
-            <Price product={product} />
+            <Name name={product.name} />
+            <Description description={product.description} />
+            <Price price={product.price} />
 
             <Button className="Button" variant="success">
               Success

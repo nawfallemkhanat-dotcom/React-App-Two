@@ -1,8 +1,8 @@
 import product from "./product";
 
-function Price() {
+function Price(props) {
   return (
-    <p style={{ marginBottom: "10px", textAlign: "center", fontWeight: "bold" }}>{product.price}</p>
+    <p style={{ marginBottom: "10px", textAlign: "center", fontWeight: "bold" }}>{props.price}</p>
   );
 }
 
